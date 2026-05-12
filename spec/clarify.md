@@ -13,12 +13,12 @@ Decisiones tomadas durante el proceso de spec. Cada entrada tiene fecha, opcione
 - Razon: decision del usuario para evitar conflictos con otros proyectos locales
 - Impacto: `package.json` script `"dev": "next dev -p 4500"`, y cualquier referencia a localhost debe usar 4500
 
-### Deploy Fly.io: manual en H1
+### Deploy Render: auto-deploy desde main
 
-- Opciones: (a) CI/CD automatico con GitHub Actions desde H1, (b) deploy manual
-- Elegido: deploy manual
-- Razon: MVP — no agregar complejidad de CI/CD hasta que el core funcione
-- Impacto: H1 no incluye GitHub Actions. Se evalua agregar CI/CD en iteracion futura.
+- Opciones: (a) Fly.io (requeria tarjeta incluso en free tier), (b) Render free tier
+- Elegido: Render free tier
+- Razon: genuinamente gratis sin tarjeta. Auto-deploy al hacer push a main. UptimeRobot para mantenerlo despierto (free tier se duerme sin trafico).
+- Impacto: H1 no incluye GitHub Actions ni CI/CD adicional. Push a main = deploy.
 
 ### Claude no como contributor en commits
 

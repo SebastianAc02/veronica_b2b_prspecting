@@ -16,7 +16,7 @@ Constraints de primera clase: costo por run y latencia son predecibles y no exce
 - Cloudflare R2: storage de CSVs con pre-signed URL
 - LLMs: claude-haiku-4-5 para Engines 1-2-3, claude-sonnet-4-6 para Engine 4 (Verification)
 - Pino: logging estructurado stdout + tabla errors en DB
-- Hosting: Fly.io
+- Hosting: Render (free tier, kept alive via UptimeRobot ping)
 
 No usar: pgvector, pg_cron, Vercel, RUES, Tavily, claude-opus, n8n, Firecrawl.
 

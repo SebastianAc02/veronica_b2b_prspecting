@@ -1,0 +1,7 @@
+node_modules
+.git
+apps/web/.next
+apps/web/node_modules
+apps/web/.env*
+*.log
+.DS_Store

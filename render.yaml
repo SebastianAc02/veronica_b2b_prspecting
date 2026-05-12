@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: veronica-prospecting
+    runtime: docker
+    plan: free
+    branch: main
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: INNGEST_EVENT_KEY
+        sync: false
+      - key: INNGEST_SIGNING_KEY
+        sync: false
+      - key: BASIC_AUTH_PASSWORD
+        sync: false

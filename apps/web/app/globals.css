@@ -25,3 +25,23 @@ body {
     text-wrap: balance;
   }
 }
+
+.login-card {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.login-card[data-mounted="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.login-btn {
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), opacity 150ms ease;
+}
+
+.login-btn:not(:disabled):active {
+  transform: scale(0.97);
+}

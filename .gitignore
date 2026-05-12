@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# Next.js
+apps/web/.next
+apps/web/out
+
+# env
+.env
+.env.local
+.env.*.local
+
+# misc
+.DS_Store
+*.log
